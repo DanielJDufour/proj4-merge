@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Merge Multiple Proj4 Instances",
   "main": "proj4-merge.js",
+  "files": [
+    "proj4-merge.js"
+  ],
   "scripts": {
     "format": "npx prettier --arrow-parens=avoid --print-width=120 --write *.js",
     "test": "node test.js"
