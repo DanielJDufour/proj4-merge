@@ -1,0 +1,39 @@
+{
+  "name": "proj4-merge",
+  "version": "0.0.0",
+  "description": "Merge Multiple Proj4 Instances",
+  "main": "proj4-merge.js",
+  "scripts": {
+    "format": "npx prettier --arrow-parens=avoid --print-width=120 --write *.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/proj4-merge.git"
+  },
+  "keywords": [
+    "coordinate",
+    "crs",
+    "geodesy",
+    "geospatial",
+    "gis",
+    "proj4",
+    "proj4js",
+    "projection",
+    "projections",
+    "reference",
+    "srs",
+    "system"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/proj4-merge/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/proj4-merge#readme",
+  "devDependencies": {
+    "flug": "^2.2.0",
+    "proj4": "^2.7.5",
+    "proj4-fully-loaded": "^0.0.4"
+  }
+}
