@@ -2,6 +2,7 @@ function merge() {
   const instances = [];
 
   const add = it => {
+    if (!it) return;
     if (Array.isArray(it)) return it.forEach(add);
     if (it.default) it = it.default;
     instances.push(it);
