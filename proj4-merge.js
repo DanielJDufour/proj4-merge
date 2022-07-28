@@ -21,4 +21,11 @@ function merge() {
   return first;
 }
 
-module.exports = merge;
+if (typeof define === "function" && define.amd) {
+  define(function() { return merge; });
+}
+
+if (typeof module === "object") {
+  module.exports = merge;
+  module.exports.default = merge;
+}

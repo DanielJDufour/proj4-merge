@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "format": "npx prettier --arrow-parens=avoid --print-width=120 --write *.js",
-    "test": "node test.js"
+    "test:js": "node test.js",
+    "test:ts": "npx ts-node ./test.ts",
+    "test": "npm run test:ts && npm run test:ts"
   },
   "repository": {
     "type": "git",
@@ -35,8 +37,8 @@
   },
   "homepage": "https://github.com/DanielJDufour/proj4-merge#readme",
   "devDependencies": {
-    "flug": "^2.2.0",
-    "proj4": "^2.7.5",
-    "proj4-fully-loaded": "^0.0.4"
+    "flug": "^2.3.1",
+    "proj4": "^2.8.0",
+    "proj4-fully-loaded": "^0.1.0"
   }
 }
