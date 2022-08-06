@@ -46,6 +46,6 @@ test("merge customized", ({ eq }) => {
 });
 
 test("merge invalids", ({ eq }) => {
-  const merged = merge([proj4, undefined, null, proj4FullyLoaded, false, 0]);
+  const merged = merge([{}, proj4, undefined, null, proj4FullyLoaded, false, 0]);
   eq(merged.defs["EPSG:32617"], expectation);
 });

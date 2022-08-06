@@ -1,10 +1,13 @@
 function merge() {
   const instances = [];
 
+  const isEmpty = it => typeof it === "object" && Object.keys(it).length === 0 && JSON.stringify(it) === "{}";
+
   const add = it => {
     if (!it) return;
     if (Array.isArray(it)) return it.forEach(add);
     if (it.default) it = it.default;
+    if (isEmpty(it)) return;
     instances.push(it);
   };
 
@@ -22,7 +25,9 @@ function merge() {
 }
 
 if (typeof define === "function" && define.amd) {
-  define(function() { return merge; });
+  define(function () {
+    return merge;
+  });
 }
 
 if (typeof module === "object") {

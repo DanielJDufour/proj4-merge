@@ -7,10 +7,11 @@
     "proj4-merge.js"
   ],
   "scripts": {
+    "f": "npm run format",
     "format": "npx prettier --arrow-parens=avoid --print-width=120 --write *.js",
     "test:js": "node test.js",
     "test:ts": "npx ts-node ./test.ts",
-    "test": "npm run test:ts && npm run test:ts"
+    "test": "npm run test:js && npm run test:ts"
   },
   "repository": {
     "type": "git",
